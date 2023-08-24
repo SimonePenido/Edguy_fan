@@ -25,11 +25,12 @@ header{
 
 h2{
     text-align: center; /* Centraliza o texto*/
+    text-transform: uppercase; /* Converte os caracteres em letras maísculas*/
 }
 
 p{
     text-align: justify;
-    padding: .2rem .5rem;
+    padding: .4rem;
 }
 
 /* Define as propriedades para os elementos com a classe 'card' */
@@ -61,7 +62,7 @@ footer {
     text-align: center; /* Centraliza o texto horizontalmente */
     font-style: italic; /* Define o estilo do texto como itálico */
     font-size: .8em; /* Define o tamanho da fonte como 0.8 vezes o tamanho padrão */
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 /* Define as propriedades dentro da media query para telas com largura máxima de 800px */
