@@ -2,43 +2,52 @@
 body {
     background-color: #000000; /* Define a cor de fundo como preto */
     font-family: Arial, Helvetica, sans-serif; /* Especifica a fonte do texto */
+    margin: 0; /* Remove margens padrão do corpo da página */
 }
 
-header{
+header {
     display: flex; /* Usa flexbox para posicionamento */
-    align-items: center;
-    justify-content: center; /* Distribui o espaço entre os filhos */
+    align-items: center; /* Centraliza verticalmente os itens no header */
+    justify-content: center; /* Centraliza horizontalmente os itens no header */
+    box-sizing: border-box; /* Considera as bordas e o preenchimento no tamanho total */
+}
+
+main {
+    margin: 0 auto 0 auto; /* Define margens superior e inferior como 0 e margens laterais como 'auto', centralizando horizontalmente */
+    width: 80%; /* Define a largura do conteúdo principal em 80% */
 }
 
 .logo {
-    height: 100%; /* Define a altura como 100% do elemento */
+    height: 100%; /* Define a altura como 100% do elemento pai */
     width: 200px; /* Define a largura como 200 pixels */
 }
 
 /* Define as propriedades para os elementos com a classe 'cards_container' */
 .cards_container {
     display: flex; /* Usa flexbox para posicionamento */
-    flex-wrap: wrap; /* Permite que os elementos filhos quebrem linha conforme necessário */
+    align-items: center; /* Centraliza verticalmente os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
     gap: 2rem; /* Define o espaçamento entre os elementos filhos */
-    align-items: center; /* Centraliza verticalmente os elementos filhos */
 }
 
-h2{
-    text-align: center; /* Centraliza o texto*/
-    text-transform: uppercase; /* Converte os caracteres em letras maísculas*/
+h2 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    text-transform: uppercase; /* Converte os caracteres em letras maiúsculas */
+    font-size: 1rem; /* Define o tamanho da fonte como 1 rem */
 }
 
-p{
-    text-align: justify;
-    padding: .4rem;
+p {
+    text-align: justify; /* Justifica o texto */
+    padding: .7rem; /* Adiciona preenchimento interno */
+    font-size: .9rem; /* Define o tamanho da fonte como 0.9 rem */
 }
 
 /* Define as propriedades para os elementos com a classe 'card' */
 .card {
     background-color: #3b3a3a; /* Define a cor de fundo dos cartões como cinza escuro */
-    color: #cfa997; /* Define a cor do texto nos cartões como um tom de bege */
+    color: #F2CE1B; /* Define a cor do texto nos cartões como um tom de bege */
     box-sizing: border-box; /* Considera as bordas e o preenchimento no tamanho total */
-    margin-bottom: 16px; /* Define a margem inferior como 16 pixels */
+    margin-bottom: .8rem; /* Define a margem inferior como 0.8 rem */
     width: 460px; /* Define a largura dos cartões como 460 pixels */
     border-radius: 5px; /* Define o raio da borda como 5 pixels, criando cantos arredondados */
 }
@@ -46,12 +55,12 @@ p{
 /* Define as propriedades para os elementos filhos de 'cards_container' que são divs */
 .cards_container div {
     height: 250px; /* Define a altura das divs como 250 pixels */
-    margin-bottom: 36px; /* Define a margem inferior das divs como 36 pixels */
+    margin-bottom: 1rem; /* Define a margem inferior das divs como 1 rem */
 }
 
 /* Define as propriedades para os elementos com a classe 'tamanho' */
 .tamanho {
-    height: 100%; /* Define a altura como 100% do elemento pai */
+    height: 101%; /* Define a altura como 101% do elemento pai */
     border-radius: 5px; /* Define o raio da borda como 5 pixels, criando cantos arredondados */
 }
 
@@ -62,7 +71,7 @@ footer {
     text-align: center; /* Centraliza o texto horizontalmente */
     font-style: italic; /* Define o estilo do texto como itálico */
     font-size: .8em; /* Define o tamanho da fonte como 0.8 vezes o tamanho padrão */
-    padding-top: 2rem;
+    padding-top: 2rem; /* Define o preenchimento superior como 2 rem */
 }
 
 /* Define as propriedades dentro da media query para telas com largura máxima de 800px */
