@@ -1,82 +1,108 @@
 /* Define as propriedades para o elemento 'body' */
 body {
-    background-color: #000000; /* Define a cor de fundo como preto */
-    font-family: sans-serif; /* Especifica a fonte do texto */
+    background-color: #000000;
+    /* Define a cor de fundo como preto */
+    font-family: sans-serif;
+    /* Especifica a fonte do texto */
     margin: 0;
 }
 
-header{
-    display: flex; /* Usa flexbox para posicionamento */
+header {
+    display: flex;
+    /* Usa flexbox para posicionamento */
     align-items: center;
-    justify-content: center; /* Distribui o espaço entre os filhos */
+    justify-content: center;
+    /* Distribui o espaço entre os filhos */
 }
 
 .logo {
-    height: 100%; /* Define a altura como 100% do elemento */
-    width: 200px; /* Define a largura como 200 pixels */
+    height: 100%;
+    /* Define a altura como 100% do elemento */
+    width: 300px;
+    /* Define a largura como 300 pixels */
 }
 
 /* Define as propriedades para os elementos com a classe 'cards_container' */
 .cards_container {
-    display: flex; /* Usa flexbox para posicionamento */
-    flex-wrap: wrap; /* Permite que os elementos filhos quebrem linha conforme necessário */
-    gap: 2rem; /* Define o espaçamento entre os elementos filhos */
-    align-items: center; /* Centraliza verticalmente os elementos filhos */
+    display: flex;
+    /* Usa flexbox para posicionamento */
+    flex-wrap: wrap;
+    /* Permite que os elementos filhos quebrem linha conforme necessário */
+    gap: 2rem;
+    /* Define o espaçamento entre os elementos filhos */
+    align-items: center;
+    /* Centraliza verticalmente os elementos filhos */
     align-content: center;
     justify-content: center;
 }
 
-
-h2{
-    text-align: center; /* Centraliza o texto*/
+h2 {
+    text-align: center;
+    /* Centraliza o texto*/
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
 }
 
-p{
+p {
     text-align: justify;
-    padding: .2rem .5rem;
+    padding: .5rem 1rem;
 }
 
 /* Define as propriedades para os elementos com a classe 'card' */
 .card {
-    background-color: #1f1e1e; /* Define a cor de fundo dos cartões como cinza escuro */
-    color: #cfa997; /* Define a cor do texto nos cartões como um tom de bege */
-    box-sizing: border-box; /* Considera as bordas e o preenchimento no tamanho total */
-    margin-bottom: 16px; /* Define a margem inferior como 16 pixels */
-    width: 460px; /* Define a largura dos cartões como 460 pixels */
-    border-radius: 5px; /* Define o raio da borda como 5 pixels, criando cantos arredondados */
+    background-color: #1f1e1e;
+    /* Define a cor de fundo dos cartões como cinza escuro */
+    color: #D96704;
+    /* Define a cor do texto nos cartões como um tom de bege */
+    box-sizing: border-box;
+    /* Considera as bordas e o preenchimento no tamanho total */
+    margin-bottom: 16px;
+    /* Define a margem inferior como 16 pixels */
+    width: 460px;
+    /* Define a largura dos cartões como 460 pixels */
+    border-radius: 5px;
+    /* Define o raio da borda como 5 pixels, criando cantos arredondados */
 }
 
 /* Define as propriedades para os elementos filhos de 'cards_container' que são divs */
 .cards_container div {
-    height: 250px; /* Define a altura das divs como 250 pixels */
-    margin-bottom: 36px; /* Define a margem inferior das divs como 36 pixels */
+    height: 250px;
+    /* Define a altura das divs como 250 pixels */
+    margin-bottom: 1em;
+    /* Define a margem inferior das divs como 1em (equivalente a 16 pixels) */
     display: flex;
     justify-content: center;
-
 }
 
 /* Define as propriedades para os elementos com a classe 'tamanho' */
 .tamanho {
-    height: 100%; /* Define a altura como 100% do elemento pai */
-    border-radius: 5px; /* Define o raio da borda como 5 pixels, criando cantos arredondados */
+    height: 100%;
+    /* Define a altura como 100% do elemento pai */
+    border-radius: 5px;
+    /* Define o raio da borda como 5 pixels, criando cantos arredondados */
 }
 
 /* Define as propriedades para o elemento 'footer' */
 footer {
-    color: #cfa997; /* Define a cor do texto como um tom de bege */
-    padding: .7em; /* Define o preenchimento interno como 0.7 vezes o tamanho da fonte */
-    text-align: center; /* Centraliza o texto horizontalmente */
-    font-style: italic; /* Define o estilo do texto como itálico */
-    font-size: .8em; /* Define o tamanho da fonte como 0.8 vezes o tamanho padrão */
+    color: #cfa997;
+    /* Define a cor do texto como um tom de bege */
+    padding: 2em;
+    /* Define o preenchimento interno como 2 vezes o tamanho da fonte */
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    font-style: italic;
+    /* Define o estilo do texto como itálico */
+    font-size: .9em;
+    /* Define o tamanho da fonte como 0.9 vezes o tamanho padrão */
     padding-top: 1rem;
 }
 
 /* Define as propriedades dentro da media query para telas com largura máxima de 800px */
 @media (max-width: 800px) {
     .cards_container {
-        flex-direction: column; /* Altera a direção dos elementos para coluna */
-        align-items: center; /* Centraliza verticalmente os elementos */
+        flex-direction: column;
+        /* Altera a direção dos elementos para coluna */
+        align-items: center;
+        /* Centraliza verticalmente os elementos */
     }
 }
-
-
